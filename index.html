@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Libary</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Hi this is Libary App use JS</h1>
+        <hr>
+        <div id="massege"></div>
+        <div class="row">
+            <div class="col-5 ">
+                <div class="card">
+                    <div class="card-header m-0">
+                        <h4 class="m-0">Enter your Book</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="myFrom">
+                            <div class="form-group row">
+                                <label for="bookName" class="col-sm-3  col-form-label">Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="bookName" placeholder="Enter Book Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="author" class="col-sm-3 col-form-label">Author</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="author" placeholder="Enter Author Name">
+                                </div>
+                            </div>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-form-label col-sm-3 pt-0">Type</legend>
+                                    <div class="col-sm-9">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="novel"
+                                                value="novel">
+                                            <label class="form-check-label" for="novel">
+                                                Novel
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="programming"
+                                                value="programming">
+                                            <label class="form-check-label" for="programming">
+                                                Programming
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="type" id="poem"
+                                                value="poem">
+                                            <label class="form-check-label" for="poem">
+                                                Poem
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary"> Add Book </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="card">
+                    <div class="card-header m-0">
+                        <h4 class="m-0">Your Book</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped " id="myTable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Author</th>
+                                    <th scope="col">Type</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/appES6.js"></script>
+            
+    <!-- <script src="js/app.js"></script> -->
+</body>
+
+</html>
